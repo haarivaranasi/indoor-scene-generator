@@ -1,8 +1,21 @@
-# Ignore system and user-specific directories
-/AppData/
-/Cookies/
-/Documents/
-/LocalSettings/
-
-
+# Ignore Python cache and environment files
+__pycache__/
+*.py[cod]
+*.env
 .env
+*.sqlite3
+
+# Ignore IDE and OS files
+.vscode/
+.DS_Store
+
+# Ignore virtual environment folders
+venv/
+env/
+.venv/
+
+# Ignore gradio launch files
+*.gradio
+
+# Ignore log files
+*.log
