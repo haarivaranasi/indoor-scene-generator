@@ -5,15 +5,9 @@ import torch
 import gradio as gr
 from diffusers import StableDiffusionPipeline
 
-load_dotenv()  # Load the environment variables from .env file
+load_dotenv()
 hf_token = os.getenv("HF_TOKEN")
 login(hf_token)
-
-
-
-
-# Hugging Face token (hardcoded or use os.environ)
-login("Your Hugging Face token here")  # ⚠ Replace with your own or read from env
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 pipe = StableDiffusionPipeline.from_pretrained(
