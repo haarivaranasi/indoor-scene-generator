@@ -1,6 +1,6 @@
-torch
 gradio
 diffusers
 transformers
 huggingface_hub
+torch
 accelerate
